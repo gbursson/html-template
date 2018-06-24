@@ -1,0 +1,9 @@
+footer {
+    visibility: hidden;
+}
+
+header,
+nav,
+section {
+    grid-column: 1 / -1;
+}
