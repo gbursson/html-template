@@ -1,0 +1,31 @@
+{
+  "name": "html-template",
+  "version": "1.0.0",
+  "description": "A very basic skeleton for HTML/CSS project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbursson/html-template.git"
+  },
+  "author": "Greg Devski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbursson/html-template/issues"
+  },
+  "homepage": "https://github.com/gbursson/html-template#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-uncss": "^0.16.1"
+  }
+}

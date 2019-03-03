@@ -1,7 +1,5 @@
 # html-template
 
-A very basic skeleton for HTML/CSS project
+A skeleton for HTML/CSS project with added gulp 4 workflow.
 
-*index.html* has basic structure (i.e. navbar, header/footer and content section) and links to css and js folders
-
-
+_index.html_ has basic structure (i.e. navbar, header/footer and content section) and links to css and js folders.
