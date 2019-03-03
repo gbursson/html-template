@@ -31,11 +31,9 @@ const css = (cb) => gulp.src("css/styles.css")
   .pipe(gulp.dest("_out/"))
   .pipe(browserSync.stream());
 
-const liveReload = (cb) => browserSync.reload();
+// const liveReload = (cb) => browserSync.reload();
 const serve = (cb) => browserSync.init({
-  server: {
-    baseDir: "_out"
-  }
+  server: "_out"
 });
 
 const watchCSS = (cb) => gulp.watch("css/*.css", css);
