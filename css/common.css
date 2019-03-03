@@ -1,16 +1,31 @@
 body {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    max-width: 960px;
-    margin: auto;
-    color: var(--color-text);
-    background: var(--color-bg);
+  display: grid;
+  font-size: var(--font-size-normal);
+  font-family: var(--font-stack-body);
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 960px;
+  margin: auto;
+  color: var(--text-color-main);
+  background-color: var(--bg-color-main);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color-main-emphasis);
+  font-family: var(--font-stack-headings);
+}
+
+footer {
+  font-size: var(--font-size-small);
+}
 
 /* DEBUG */
 
 * {
-    outline: 1px solid green;
-    padding: 5px;
+  outline: 1px solid green;
+  padding: 5px;
 }

@@ -1,1 +1,34 @@
-:root {}
+:root {
+  --font-size-small: 1rem;
+  --font-size-normal: 2rem;
+  --font-size-large: 3rem;
+  --text-color-main: rgba(50, 50, 50, 1);
+  --text-color-main-emphasis: rgba(0, 0, 0, 1);
+  --bg-color-main: rgba(100, 100, 250, 0.1);
+  --font-stack-body: "Candara", "Segoe UI", sans-serif;
+  --font-stack-headings: "Garamond", "Palatino", serif;
+}
+
+/* colors */
+/*
+
+--text-color-main-inverted:
+
+--text-color-main-emphasis-inverted:
+
+--bg-color-main-inverted:
+/*
+
+/* fonts */
+/*
+
+
+
+
+*/
+
+/* xxxxxx */
+/*
+
+
+*/

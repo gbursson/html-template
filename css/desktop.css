@@ -1,14 +1,16 @@
 @media only screen and (min-width: 601px) {
-    body {}
-    header,
-    footer {
-        visibility: visible;
-        grid-column: 1 / -1;
-    }
-    nav {
-        grid-column: 1 / 4;
-    }
-    section {
-        grid-column: 4 / -1;
-    }
+  body {
+    background: rgba(100, 100, 150, 0.5);
+  }
+  header,
+  footer {
+    visibility: visible;
+    grid-column: 1 / -1;
+  }
+  nav {
+    grid-column: 1 / 4;
+  }
+  section {
+    grid-column: 4 / -1;
+  }
 }
