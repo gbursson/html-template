@@ -19,7 +19,7 @@ const postCssPlugins = [
   // cssNano()
 ];
 
-const cleanup = (cb) => del("_out/");
+const clean = (cb) => del("_out/");
 const html = (cb) => gulp.src("_src/index.html").pipe(gulp.dest("_out")).pipe(browserSync.stream());
 const css = (cb) => gulp.src("_src/css/styles.css")
   .pipe(postCSS(postCssPlugins))
@@ -27,7 +27,6 @@ const css = (cb) => gulp.src("_src/css/styles.css")
   .pipe(gulp.dest("_out/"))
   .pipe(browserSync.stream());
 
-// const liveReload = (cb) => browserSync.reload();
 const serve = (cb) => browserSync.init({
   server: "_out"
 });
@@ -35,5 +34,7 @@ const serve = (cb) => browserSync.init({
 const watchCSS = (cb) => gulp.watch("_src/css/*.css", css);
 const watchHTML = (cb) => gulp.watch("_src/index.html", html);
 
-
-exports.build = gulp.series(cleanup, gulp.parallel(css, html), gulp.parallel(watchCSS, watchHTML, serve));
+exports.watch = gulp.parallel(watchCSS, watchHTML);
+exports.serve = serve;
+exports.clean = clean;
+exports.build = gulp.series(clean, gulp.parallel(css, html), gulp.parallel(watchCSS, watchHTML, serve));
