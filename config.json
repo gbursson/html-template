@@ -1,0 +1,10 @@
+{
+  "src": {
+    "css": "_src/css/styles.css",
+    "html": "_src/*.html",
+    "js": "_src/js/*",
+    "img": "_src/img/*"
+  },
+  "dest": "_out/"
+
+}
