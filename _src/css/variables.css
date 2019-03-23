@@ -5,8 +5,8 @@
   --text-color-main: rgba(50, 50, 50, 1);
   --text-color-main-emphasis: rgba(0, 0, 0, 1);
   --bg-color-main: rgba(100, 100, 250, 0.1);
-  --font-stack-body: "Candara", "Segoe UI", sans-serif;
-  --font-stack-headings: "Garamond", "Palatino", serif;
+  --font-stack-body: "Ubuntu", "Segoe UI", sans-serif;
+  --font-stack-headings: "Roboto Slab", "Palatino", serif;
 }
 
 /* colors */

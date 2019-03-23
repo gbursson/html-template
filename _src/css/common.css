@@ -9,6 +9,17 @@ body {
   background-color: var(--bg-color-main);
 }
 
+section > img {
+  width: 20%;
+  border-radius: 20px;
+}
+
+section > img:hover {
+  transform: scale(4);
+  opacity: 0.8;
+  transition-duration: 2s;
+}
+
 h1,
 h2,
 h3,
@@ -21,11 +32,4 @@ h6 {
 
 footer {
   font-size: var(--font-size-small);
-}
-
-/* DEBUG */
-
-* {
-  outline: 1px solid green;
-  padding: 5px;
 }
