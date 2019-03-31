@@ -1,5 +1,6 @@
 {
   "src": {
+    "cssAll": "_src/css/*.css",
     "css": "_src/css/styles.css",
     "html": "_src/*.html",
     "js": "_src/js/*",

@@ -17,13 +17,26 @@ h5,
 h6 {
   color: var(--text-color-main-emphasis);
   font-family: var(--font-stack-headings);
+  font-weight: var(--font-weight-bold);
 }
 
-header > h1 {
+header {
   text-align: center;
+  outline: 1px yellow solid;
 }
 
 footer {
+  padding: 10px 30px;
   text-align: center;
   font-size: var(--font-size-small);
+  font-weight: var(--font-weight-light);
+  outline: 1px yellow solid; /* DEBUG */
+}
+
+nav {
+  outline: 1px yellow solid; /* DEBUG */
+}
+
+section {
+  outline: 1px yellow solid; /* DEBUG */
 }

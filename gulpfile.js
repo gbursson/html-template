@@ -47,11 +47,7 @@ const clean = (cb) => del(CONFIG.dest);
 
 const html = (cb) => gulp.src(CONFIG.src.html).pipe(gulp.dest(CONFIG.dest)).pipe(browserSync.stream());
 
-const css = (cb) => gulp.src(CONFIG.src.css)
-  .pipe(postCSS(postCssPlugins))
-  .pipe(rename("style.min.css"))
-  .pipe(gulp.dest(CONFIG.dest))
-  .pipe(browserSync.stream());
+const css = (cb) => gulp.src(CONFIG.src.css).pipe(postCSS(postCssPlugins)).pipe(rename('style.min.css')).pipe(gulp.dest(CONFIG.dest)).pipe(browserSync.stream());
 
 const images = (cb) => gulp.src(CONFIG.src.img).pipe(imagemin(imageminOptions)).pipe(gulp.dest(CONFIG.dest)).pipe(browserSync.stream());
 
@@ -59,9 +55,7 @@ const serve = (cb) => browserSync.init({
   server: CONFIG.dest
 });
 
-
-
-const watchCSS = (cb) => gulp.watch(CONFIG.src.css, css);
+const watchCSS = (cb) => gulp.watch(CONFIG.src.cssAll, css);
 const watchHTML = (cb) => gulp.watch(CONFIG.src.html, html);
 
 exports.images = images;

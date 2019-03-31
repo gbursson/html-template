@@ -2,11 +2,17 @@
   --font-size-small: 1rem;
   --font-size-normal: 2rem;
   --font-size-large: 3rem;
+
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  --font-stack-body: "Roboto", "Segoe UI", sans-serif;
+  --font-stack-headings: "Roboto Slab", "Palatino", serif;
+
   --text-color-main: rgba(50, 50, 50, 1);
   --text-color-main-emphasis: rgba(0, 0, 0, 1);
   --bg-color-main: rgba(100, 100, 250, 0.1);
-  --font-stack-body: "Ubuntu", "Segoe UI", sans-serif;
-  --font-stack-headings: "Forum", "Palatino", serif;
 }
 
 /* colors */
